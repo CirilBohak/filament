@@ -2769,7 +2769,7 @@ The first step in the image transformation process is to use a physically based 
 
 ### Exposure settings
 
-Because we use photometric units throughout the lighting pipeline, the light reaching the camera is an energy expressed in luminance $L$, in $cd.m^{-2}$. Light incident to the camera sensor can cover a large range of values, from $10^{-5}cd.m^{-2}$ for starlight to $10^{9}cd.m^{-2}$ for the sun. Since we obviously cannot manipulate and even less record such a large range of values, we need to remap them.
+Because we use photometric units throughout the lighting pipeline, the light reaching the camera is an energy expressed in luminance $L$, in $cd$/$m^{2}$. Light incident to the camera sensor can cover a large range of values, from $10^{-5}cd$/$m^{2}$ for starlight to $10^{9}cd$/$m^{2}$ for the sun. Since we obviously cannot manipulate and even less record such a large range of values, we need to remap them.
 
 This range remapping is done in a camera by exposing the sensor for a certain time. To maximize the use of the limited range of the sensor, the scene's light range is centered around the "middle gray", a value halfway between black and white. The exposition is therefore achieved by manipulating, either manually or automatically, 3 settings:
 
