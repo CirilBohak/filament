@@ -3105,7 +3105,7 @@ A simple exponential voxelization is unfortunately not enough. The graphic above
 
 ![Figure [froxelDistributionClose]: Depth distribution in the 0.1-7m range](images/diagram_froxels2.png)
 
-This graphic shows that a simple exponential distribution uses up half of the slices very close to the camera. In this particular case, we use 8 slices out of 16in the first 5 meters. Since dynamic world lights are either point lights (spheres) or spot lights (cones), such a fine resolution is completely unnecessary so close to the near plane.
+This graphic shows that a simple exponential distribution uses up half of the slices very close to the camera. In this particular case, we use 8 slices out of 16 in the first 5 meters. Since dynamic world lights are either point lights (spheres) or spot lights (cones), such a fine resolution is completely unnecessary so close to the near plane.
 
 Our solution is to manually tweak the size of the first froxel depending on the scene and the near and far planes. By doing so, we can better distribute the remaining froxels across the frustum. Figure [froxelDistributionExp] shows for instance what happens when we use a special froxel between 0.1m and 5m.
 
